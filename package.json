@@ -1,6 +1,6 @@
 {
   "name": "go-tools-cli",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "golang tools",
   "repository": "https://github.com/zguillez/go-tools-cli",
   "license": "MIT",
@@ -25,9 +25,10 @@
     "version:patch": "./bin/version",
     "version:minor": "./bin/version --minor",
     "version:major": "./bin/version --major",
-    "deploy": "npm run clean && npm run version && npm run deploy:lite && npm run deploy:bin",
+    "deploy": "npm run clean && npm run version && npm run deploy:lite && npm run deploy:bin && npm run deploy:git",
     "deploy:lite": "go build . && go install .",
-    "deploy:bin": "mv $GOBIN/go-tools-cli $GOBIN/gotools"
+    "deploy:bin": "mv $GOBIN/go-tools-cli $GOBIN/gotools",
+    "deploy:git": "z git push -b main -m deploy"
   },
   "devDependencies": {
     "colors": "^1.4.0",
