@@ -3,24 +3,26 @@ package main
 import (
 	"github.com/fatih/color"
 	gotools "github.com/zguillez/go-tools"
-	"github.com/zguillez/go-tools/core"
+	"github.com/zguillez/go-tools-cli/core"
+	gotoolsc "github.com/zguillez/go-tools/core"
 )
 
 func main() {
-	version := core.FlagBool([]string{"version", "v"}, false, "Package version")
-	help := core.FlagBool([]string{"help", "h"}, false, "Help")
-	command := core.FlagString([]string{"command", "c"}, "", "Command to execute:\ntools -c version -l minor")
-	input := core.FlagString([]string{"input", "i"}, "", "Input value text")
-	output := core.FlagString([]string{"output", "o"}, "", "Output value text")
-	level := core.FlagString([]string{"level", "l"}, "100", "Level value int")
-	verbose := core.FlagBool([]string{"verbose"}, false, "Display console logs")
-	core.FlagParse()
+	version := gotoolsc.FlagBool([]string{"version", "v"}, false, "Package version")
+	help := gotoolsc.FlagBool([]string{"help", "h"}, false, "Help")
+	command := gotoolsc.FlagString([]string{"command", "c"}, "", "Command to execute:\ntools -c version -l minor")
+	input := gotoolsc.FlagString([]string{"input", "i"}, "", "Input value text")
+	output := gotoolsc.FlagString([]string{"output", "o"}, "", "Output value text")
+	level := gotoolsc.FlagString([]string{"level", "l"}, "100", "Level value int")
+	verbose := gotoolsc.FlagBool([]string{"verbose"}, false, "Display console logs")
+	gotoolsc.FlagParse()
 
 	if *help {
+		core.Help()
 		gotools.Help()
 	} else if *version {
-		color.Yellow("v0.1.7-cli")
 		gotools.Version()
+		color.Cyan("[gtools-cli v0.1.8]")
 	} else if *command != "" {
 		var args []string
 		switch *command {
