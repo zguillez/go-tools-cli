@@ -22,7 +22,7 @@ func main() {
 		gotools.Help()
 	} else if *version {
 		gotools.Version()
-		color.Cyan("[gtools-cli v0.1.11]")
+		color.Cyan("[gtools-cli v0.1.12]")
 	} else if *command != "" {
 		var args []string
 		switch *command {
