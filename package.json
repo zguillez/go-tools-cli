@@ -1,6 +1,6 @@
 {
   "name": "go-tools-cli",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "golang tools",
   "repository": "https://github.com/zguillez/go-tools-cli",
   "license": "MIT",
@@ -12,7 +12,7 @@
   "scripts": {
     "go:init": "go mod init github.com/zguillez/go-tools-cli",
     "go:dependencies": "go mod tidy",
-    "clean": "npm run clean:zip && npm run clean:ds && npm run clean:txt && npm run clean:csv && npm run clean:tsv && npm run clean:log && npm run clean:sql && npm run clean:xml",
+    "clean": "npm run clean:bin && npm run clean:zip && npm run clean:ds && npm run clean:txt && npm run clean:csv && npm run clean:tsv && npm run clean:log && npm run clean:sql && npm run clean:xml",
     "clean:csv": "find ./ -name '*.csv' -exec rm -f {} \\;",
     "clean:ds": "find ./ -name '.DS_Store' -exec rm -f {} \\;",
     "clean:log": "find ./ -name '*.log' -exec rm -f {} \\;",
@@ -21,6 +21,7 @@
     "clean:txt": "find ./ -name '*.txt' -exec rm -f {} \\;",
     "clean:xml": "find . -path ./.idea -prune -o -name '*.xml' -print -exec rm -f {} \\;",
     "clean:zip": "rm -f *.zip",
+    "clean:bin": "rm -f go-tools-cli",
     "version": "npm run version:patch",
     "version:patch": "./bin/version",
     "version:minor": "./bin/version --minor",
