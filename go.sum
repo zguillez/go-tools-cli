@@ -6,8 +6,8 @@ github.com/mattn/go-colorable v0.1.9/go.mod h1:u6P/XSegPjTcexA+o6vUJrdnUu04hMope
 github.com/mattn/go-isatty v0.0.12/go.mod h1:cbi8OIDigv2wuxKPP5vlRcQ1OAZbq2CE4Kysco4FUpU=
 github.com/mattn/go-isatty v0.0.14 h1:yVuAays6BHfxijgZPzw+3Zlu5yQgKGP2/hcQbHb7S9Y=
 github.com/mattn/go-isatty v0.0.14/go.mod h1:7GGIvUiUoEMVVmxf/4nioHXj79iQHKdU27kJ6hsGG94=
-github.com/zguillez/go-tools v0.1.27 h1:VqzM+HFtywm8BOmaNIPoHBYgOnnIcVo3JQxxwyDS6Z4=
-github.com/zguillez/go-tools v0.1.27/go.mod h1:P4iQpGiGKlJo4vQ54fcDYhmA6Rc386ApqQiRm8V6jwM=
+github.com/zguillez/go-tools v0.1.28 h1:sPFbqdK2NG1s4WaOxeJty/qLRF2+7bdU/jO9SfyVciU=
+github.com/zguillez/go-tools v0.1.28/go.mod h1:P4iQpGiGKlJo4vQ54fcDYhmA6Rc386ApqQiRm8V6jwM=
 golang.org/x/net v0.0.0-20211109214657-ef0fda0de508/go.mod h1:9nx3DQGgdP8bBQD5qxJ1jj9UTztislL4KSBs9R2vV5Y=
 golang.org/x/sys v0.0.0-20200116001909-b77594299b42/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20200223170610-d5e6a3e2c0ae/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
