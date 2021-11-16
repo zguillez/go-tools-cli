@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/fatih/color v1.13.0
-	github.com/zguillez/go-tools v0.1.28
+	github.com/zguillez/go-tools v0.1.33
 )
 
 require (
